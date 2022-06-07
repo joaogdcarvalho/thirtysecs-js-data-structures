@@ -25,6 +25,8 @@ console.log('map/double: ' + nmb.map(n => n*2));
 console.log('filter: ' + nmb.filter(n => n%2 === 0));
 console.log('reduce: ' + nmb.reduce((a,n) => a + n, 0));
 
+
+
 // sets - (a.k.a "keyed collection")
 const nmt = new Set();
 const nms = new Set([1,2,3,4]);
@@ -58,3 +60,28 @@ let sep = new Set(arr); //convert (unique elements) from array to set
 const arb = ['a', 'a', 'b', 'c', 'c'];
 const seq = new Set(arb); //convert to set
 const arc = [...seq]; //convert to array
+
+
+
+// maps - (a.k.a "associative keyed collection")
+
+const ppl = new Map([
+  [1, { name: 'Luis' }],
+  [2, { name: 'Adriana' }]
+]);
+
+ppl.set(4, { name: 'Marcos' });
+ppl.set(2, { name: 'Otávio' });
+
+ppl.size;                      // 3
+ppl.has(4);                    // true
+ppl.get(2);                    // { name: 'Otávio' }
+
+ppl.delete(2);
+ppl.size;                      // 2
+
+[...ppl.keys()];               // [1, 4]
+[...ppl.values()];             // [{ name: 'Luis' }, { name: 'Marcos' }]
+
+ppl.clear();
+ppl.size;                      // 0
