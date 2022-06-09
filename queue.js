@@ -1,3 +1,5 @@
+// QUEUE - DATA STRUCTURE FIFO (FIRST IN FIRST OUT)
+
 class Queue {
   //creating class constructor
   constructor() {
