@@ -3,18 +3,22 @@ class DoublyLinkedList {
     this.nodes = [];
   }
 
+  // The number of elements in the doubly linked list
   get size() {
     return this.nodes.length;
   }
 
+  // The first element in the doubly linked list
   get head() {
     return this.size ? this.nodes[0] : null;
   }
 
+  // The last element in the doubly linked list
   get tail() {
     return this.size ? this.nodes[this.size - 1] : null;
   }
 
+  // Inserts an element at the specific index
   insertAt(index, value) {
     const previousNode = this.nodes[index - 1] || null;
     const nextNode = this.nodes[index] || null;
@@ -33,10 +37,12 @@ class DoublyLinkedList {
     this.insertAt(this.size, value);
   }
 
+  // Retrieves the element at the specific index
   getAt(index) {
     return this.nodes[index];
   }
 
+  // Removes the element at the specific index
   removeAt(index) {
     const previousNode = this.nodes[index - 1] || null;
     const nextNode = this.nodes[index + 1] || null;
@@ -47,10 +53,12 @@ class DoublyLinkedList {
     return this.nodes.splice(index, 1);
   }
 
+  // Empties the doubly linked list
   clear() {
     this.nodes = [];
   }
 
+  // Reverses the order of elements in the doulby linked list
   reverse() {
     this.nodes = this.nodes.reduce((acc, { value }) => { 
       const nextNode = acc[0] || null;
