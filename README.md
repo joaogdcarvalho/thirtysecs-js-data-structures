@@ -1,7 +1,7 @@
-# 30 Seconds of Code - JavaScript Data Structures
-The JavaScript data structures collection includes implementations and examples of some of the most commonly-used data structures. Data structure snippets are best used as a learning resource, as they might require optimizations to run in production.
+# JavaScript Data Structures - 30 Seconds of Code
+Welcome to the JavaScript Data Structures collection by 30 Seconds of Code. This repository contains implementations and illustrative examples of fundamental data structures in JavaScript. While these snippets serve as valuable learning aids, please note that they may necessitate optimizations for production environments.
 
-## Snippets
+## Included Data Structures
 
 1. Arrays
 2. Sets
@@ -14,3 +14,5 @@ The JavaScript data structures collection includes implementations and examples 
 9. Tree
 10. Binary Tree
 11. Binary Search Tree
+
+Explore, learn, and optimize for your needs!
